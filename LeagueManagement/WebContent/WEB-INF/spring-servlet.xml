@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xmlns:context="http://www.springframework.org/schema/context"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  
+http://www.springframework.org/schema/context  
+http://www.springframework.org/schema/context/spring-context-3.0.xsd">  
+    <context:component-scan  base-package="management" />  
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">  
+        <property name="prefix" value="/" />  
+        <property name="suffix" value=".jsp" />  
+    </bean>  
+    <!--
+    <bean id="hibernateSessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="configLocation" value="classpath:hibernate.cfg.xml" />
+    </bean>
+     <bean id="template" class="org.springframework.orm.hibernate4.HibernateTemplate">  
+    <property name="sessionFactory" ref="hibernateSessionFactory"></property>  
+    </bean>
+    <bean id="teamDAO" class="management.TeamDAO">  
+    <constructor-arg>
+        <ref bean="hibernateSessionFactory" />
+    </constructor-arg >
+     <property name="sessionFactory" ref="hibernateSessionFactory"></property>
+     </bean> 
+     
+    -->
+    
+    
+    
+    
+    
+   
+    
+</beans>  

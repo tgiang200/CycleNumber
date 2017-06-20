@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+              
+              <hibernate-mapping>
+              
+                <class name="management.Match" table="schedule" catalog="web">
+                
+                    <id name="id" column="id" type="int">
+                        <generator class="increment"/>
+                    </id>
+                    
+                    <property name="cn_id" column="cn_id" type="int"/>
+              		<property name="kh_id" column="kh_id" type="int"/>
+              		<property name="date" column="match_date" type="java.sql.Date"/>
+                </class>
+                
+              </hibernate-mapping>
